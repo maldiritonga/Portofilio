@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - M. Aldi Ritonga</title>
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        forest: {
+                            DEFAULT: '#1B4332',
+                            50: '#F2F7F4',
+                            100: '#E2EFE7',
+                            200: '#C5DFD0',
+                            300: '#9DC6B0',
+                            400: '#6FA78D',
+                            500: '#406A57',
+                            600: '#2D5A46',
+                            700: '#234E3F',
+                            800: '#1B4332',
+                            900: '#132E22',
+                        },
+                        sage: {
+                            DEFAULT: '#52796F',
+                            50: '#F4F7F5',
+                            100: '#E8F0EC',
+                            200: '#D2E0D6',
+                            300: '#B6CCBD',
+                            400: '#84A98C',
+                            500: '#52796F',
+                            600: '#354F52',
+                            700: '#2F3E46',
+                        },
+                        offwhite: '#F8F9FA',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-[#F8F9FA] text-gray-800 font-sans selection:bg-[#D2E0D6] selection:text-[#1B4332] antialiased">
+    
+    <!-- Navbar -->
+    <nav class="bg-white/90 backdrop-blur-md border-b border-gray-200/80 shadow-xs fixed w-full z-30 top-0 transition-all duration-300">
+        <div class="container max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-extrabold text-[#1B4332] tracking-tight flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#52796F]"></span> MALDI.
+            </a>
+            <ul class="hidden md:flex space-x-8 font-medium text-sm">
+                <li><a href="#home" class="text-gray-600 hover:text-[#1B4332] transition">Beranda</a></li>
+                <li><a href="#about" class="text-gray-600 hover:text-[#1B4332] transition">Tentang</a></li>
+                <li><a href="#skills" class="text-gray-600 hover:text-[#1B4332] transition">Keahlian</a></li>
+                <li><a href="#projects" class="text-gray-600 hover:text-[#1B4332] transition">Proyek & Pengalaman</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-[#1B4332] transition">Kontak</a></li>
+            </ul>
+            <!-- Mobile Menu Toggle Button -->
+            <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-gray-700 hover:text-[#1B4332] p-1.5 focus:outline-none" aria-label="Toggle Menu">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-200 px-6 py-4 space-y-3 font-medium text-sm shadow-md">
+            <a href="#home" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-gray-700 hover:text-[#1B4332] py-1">Beranda</a>
+            <a href="#about" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-gray-700 hover:text-[#1B4332] py-1">Tentang</a>
+            <a href="#skills" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-gray-700 hover:text-[#1B4332] py-1">Keahlian</a>
+            <a href="#projects" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-gray-700 hover:text-[#1B4332] py-1">Proyek & Pengalaman</a>
+            <a href="#contact" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-gray-700 hover:text-[#1B4332] py-1">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 container max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center scroll-mt-20">
+        <div id="about" class="md:w-1/2 md:pr-10 scroll-mt-32">
+            <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[#E8F0EC] text-[#1B4332] border border-[#D2E0D6] mb-5 shadow-xs">
+                <span class="w-2 h-2 rounded-full bg-[#52796F]"></span> Mahasiswa D4 Teknik Informatika
+            </span>
+            <h2 class="text-xs font-bold tracking-widest text-[#52796F] uppercase mb-2">Halo, Selamat Datang!</h2>
+            <h1 class="text-5xl md:text-6xl font-extrabold text-[#1B4332] mb-4 tracking-tight leading-tight">
+                PERSONAL <br><span class="text-[#52796F]">PORTFOLIO</span>
+            </h1>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">M. Aldi Ritonga</h3>
+            <p class="text-base md:text-lg text-gray-600 mb-8 leading-relaxed max-w-xl">
+                Mahasiswa D4 Teknik Informatika di Politeknik Caltex Riau. Memiliki minat di bidang Teknologi Informasi serta pengalaman dalam proyek jaringan komputer, pengembangan web, dan machine learning.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#projects" class="bg-[#1B4332] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#2D5A46] transition shadow-xs hover:shadow-sm inline-flex items-center gap-2">
+                    <span>Lihat Proyek</span> <i class="fas fa-arrow-down text-xs"></i>
+                </a>
+                <a href="#contact" class="border border-[#1B4332] text-[#1B4332] px-6 py-3 rounded-xl font-semibold hover:bg-[#E8F0EC] transition inline-flex items-center gap-2">
+                    <span>Hubungi Saya</span> <i class="fas fa-envelope text-xs"></i>
+                </a>
+            </div>
+        </div>
+        <div class="md:w-1/2 mt-16 md:mt-0 flex justify-center items-center relative w-full min-h-[350px] md:min-h-[450px]">
+            <!-- Image 1 (Kiri Belakang) -->
+            <img src="assets/img/p1.png" alt="Aldi Ritonga 1" class="absolute top-0 left-0 md:left-4 w-56 md:w-72 object-contain transform -rotate-6 z-0 hover:z-30 hover:scale-105 hover:-translate-y-2 hover:rotate-0 transition-all duration-300 cursor-pointer drop-shadow-md">
+            
+            <!-- Image 2 (Kanan Belakang) -->
+            <img src="assets/img/p3.png" alt="Aldi Ritonga 2" class="absolute top-12 right-0 md:right-4 w-56 md:w-72 object-contain transform rotate-6 z-10 hover:z-30 hover:scale-105 hover:-translate-y-2 hover:rotate-0 transition-all duration-300 cursor-pointer drop-shadow-md">
+            
+            <!-- Image 3 (Tengah Depan) -->
+            <img src="assets/img/p2.png" alt="Aldi Ritonga 3" class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-64 md:w-80 object-contain z-20 hover:scale-105 hover:-translate-y-3 transition-all duration-300 cursor-pointer drop-shadow-lg">
+        </div>
+    </section>
+
+    <!-- Skills & Certifications Section -->
+    <section id="skills" class="py-24 bg-white border-y border-gray-200/70">
+        <div class="container max-w-6xl mx-auto px-6">
+            <span class="block text-center text-xs font-bold uppercase tracking-widest text-[#52796F] mb-2">Kompetensi & Sertifikasi</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-center text-[#1B4332] mb-14 tracking-tight">SKILLS & CERTIFICATIONS</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-14">
+                <!-- Skill Card 1 -->
+                <div class="bg-[#F8F9FA] rounded-2xl p-7 border border-gray-200/80 hover:border-[#84A98C] hover:shadow-md transition group">
+                    <div class="w-12 h-12 rounded-xl bg-[#E8F0EC] text-[#1B4332] flex items-center justify-center mb-5 group-hover:bg-[#1B4332] group-hover:text-white transition">
+                        <i class="fas fa-network-wired text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#1B4332] mb-4">Jaringan Komputer</h3>
+                    <ul class="space-y-2.5 text-sm text-gray-600">
+                        <li class="flex items-start"><i class="fas fa-check text-xs text-[#52796F] mt-1 mr-2.5 shrink-0"></i><span>Konfigurasi dasar MikroTik Router</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-xs text-[#52796F] mt-1 mr-2.5 shrink-0"></i><span>IP Addressing & Subnetting</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-xs text-[#52796F] mt-1 mr-2.5 shrink-0"></i><span>Network Troubleshooting</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-xs text-[#52796F] mt-1 mr-2.5 shrink-0"></i><span>Dasar Routing & Switching</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-xs text-[#52796F] mt-1 mr-2.5 shrink-0"></i><span>Cisco Networking Fundamentals</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-xs text-[#52796F] mt-1 mr-2.5 shrink-0"></i><span>Fiber Optik & Infrastruktur Jaringan (FTTx, ODP/OLT)</span></li>
+                    </ul>
+                </div>
+                <!-- Skill Card 2 -->
+                <div class="bg-[#F8F9FA] rounded-2xl p-7 border border-gray-200/80 hover:border-[#84A98C] hover:shadow-md transition group">
+                    <div class="w-12 h-12 rounded-xl bg-[#E8F0EC] text-[#1B4332] flex items-center justify-center mb-5 group-hover:bg-[#1B4332] group-hover:text-white transition">
+                        <i class="fas fa-code text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#1B4332] mb-4">Pengembangan Web</h3>
+                    <ul class="space-y-2.5 text-sm text-gray-600">
+                        <li class="flex items-start"><i class="fas fa-check text-xs text-[#52796F] mt-1 mr-2.5 shrink-0"></i><span>Laravel Framework, React.js</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-xs text-[#52796F] mt-1 mr-2.5 shrink-0"></i><span>MySQL Database</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-xs text-[#52796F] mt-1 mr-2.5 shrink-0"></i><span>HTML, CSS, dan JavaScript</span></li>
+                    </ul>
+                </div>
+                <!-- Skill Card 3 -->
+                <div class="bg-[#F8F9FA] rounded-2xl p-7 border border-gray-200/80 hover:border-[#84A98C] hover:shadow-md transition group">
+                    <div class="w-12 h-12 rounded-xl bg-[#E8F0EC] text-[#1B4332] flex items-center justify-center mb-5 group-hover:bg-[#1B4332] group-hover:text-white transition">
+                        <i class="fas fa-laptop-code text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#1B4332] mb-4">Teknologi Lainnya</h3>
+                    <ul class="space-y-2.5 text-sm text-gray-600">
+                        <li class="flex items-start"><i class="fas fa-check text-xs text-[#52796F] mt-1 mr-2.5 shrink-0"></i><span>AI Productivity Tools</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-xs text-[#52796F] mt-1 mr-2.5 shrink-0"></i><span>Microsoft Office & Google Workspace</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="bg-[#F4F7F5] rounded-2xl p-6 md:p-8 border border-[#D2E0D6]">
+                <h3 class="text-2xl font-bold text-[#1B4332] mb-8 text-center flex items-center justify-center gap-2">
+                    <i class="fas fa-certificate text-[#52796F]"></i> Sertifikat & Lisensi
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Sertifikat 1 -->
+                    <div class="bg-white p-5 rounded-xl border border-gray-200/80 shadow-xs hover:shadow-md hover:border-[#84A98C] transition flex flex-col justify-between">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="bg-[#E8F0EC] text-[#1B4332] w-12 h-12 rounded-xl flex items-center justify-center shrink-0 border border-[#D2E0D6]">
+                                <i class="fas fa-award text-2xl"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-bold text-base md:text-lg text-[#1B4332] leading-snug">
+                                    <a href="assets/img/Sertifikat/sertifikatMikrotik.pdf" target="_blank" class="hover:text-[#52796F] transition">MikroTik Certified Network Associate (MTCNA) — 2025</a>
+                                </h4>
+                                <p class="text-gray-500 text-sm mt-1">Diterbitkan oleh MikroTik</p>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-gray-100 flex items-center justify-between">
+                            <span class="text-xs text-gray-500 font-medium flex items-center gap-1.5">
+                                <i class="fas fa-file-pdf text-[#52796F]"></i> Dokumen PDF
+                            </span>
+                            <a href="assets/img/Sertifikat/sertifikatMikrotik.pdf" target="_blank" class="inline-flex items-center gap-1.5 bg-[#1B4332] text-white text-xs font-semibold px-4 py-2 rounded-lg hover:bg-[#2D5A46] transition shadow-xs">
+                                <i class="fas fa-eye text-xs"></i> Lihat
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Sertifikat 2 -->
+                    <div class="bg-white p-5 rounded-xl border border-gray-200/80 shadow-xs hover:shadow-md hover:border-[#84A98C] transition flex flex-col justify-between">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="bg-[#E8F0EC] text-[#1B4332] w-12 h-12 rounded-xl flex items-center justify-center shrink-0 border border-[#D2E0D6]">
+                                <i class="fas fa-award text-2xl"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-bold text-base md:text-lg text-[#1B4332] leading-snug">
+                                    <a href="assets/img/Sertifikat/certificateCISCO.pdf" target="_blank" class="hover:text-[#52796F] transition">CCNA: Introduction to Networks — 2025</a>
+                                </h4>
+                                <p class="text-gray-500 text-sm mt-1">Diterbitkan oleh Cisco Networking Academy</p>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-gray-100 flex items-center justify-between">
+                            <span class="text-xs text-gray-500 font-medium flex items-center gap-1.5">
+                                <i class="fas fa-file-pdf text-[#52796F]"></i> Dokumen PDF
+                            </span>
+                            <a href="assets/img/Sertifikat/certificateCISCO.pdf" target="_blank" class="inline-flex items-center gap-1.5 bg-[#1B4332] text-white text-xs font-semibold px-4 py-2 rounded-lg hover:bg-[#2D5A46] transition shadow-xs">
+                                <i class="fas fa-eye text-xs"></i> Lihat
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Sertifikat 3 -->
+                    <div class="bg-white p-5 rounded-xl border border-gray-200/80 shadow-xs hover:shadow-md hover:border-[#84A98C] transition flex flex-col justify-between">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="bg-[#E8F0EC] text-[#1B4332] w-12 h-12 rounded-xl flex items-center justify-center shrink-0 border border-[#D2E0D6]">
+                                <i class="fas fa-award text-2xl"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-bold text-base md:text-lg text-[#1B4332] leading-snug">
+                                    <a href="assets/img/Sertifikat/sertifikatDDO.pdf" target="_blank" class="hover:text-[#52796F] transition">Sertifikat Digital Dasar Otomotif (DDO)</a>
+                                </h4>
+                                <p class="text-gray-500 text-sm mt-1">Sertifikat Unit Kegiatan Mahasiswa</p>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-gray-100 flex items-center justify-between">
+                            <span class="text-xs text-gray-500 font-medium flex items-center gap-1.5">
+                                <i class="fas fa-file-pdf text-[#52796F]"></i> Dokumen PDF
+                            </span>
+                            <a href="assets/img/Sertifikat/sertifikatDDO.pdf" target="_blank" class="inline-flex items-center gap-1.5 bg-[#1B4332] text-white text-xs font-semibold px-4 py-2 rounded-lg hover:bg-[#2D5A46] transition shadow-xs">
+                                <i class="fas fa-eye text-xs"></i> Lihat
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Sertifikat 4 -->
+                    <div class="bg-white p-5 rounded-xl border border-gray-200/80 shadow-xs hover:shadow-md hover:border-[#84A98C] transition flex flex-col justify-between">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="bg-[#E8F0EC] text-[#1B4332] w-12 h-12 rounded-xl flex items-center justify-center shrink-0 border border-[#D2E0D6]">
+                                <i class="fas fa-award text-2xl"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-bold text-base md:text-lg text-[#1B4332] leading-snug">
+                                    <a href="assets/img/Sertifikat/SertifikatVolunterMBG.pdf" target="_blank" class="hover:text-[#52796F] transition">Sertifikat Volunter MBG</a>
+                                </h4>
+                                <p class="text-gray-500 text-sm mt-1">Bimbingan Teknis Penjamah Makanan — Program Makan Bergizi Gratis Wilayah I Badan Gizi Nasional</p>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-gray-100 flex items-center justify-between">
+                            <span class="text-xs text-gray-500 font-medium flex items-center gap-1.5">
+                                <i class="fas fa-file-pdf text-[#52796F]"></i> Dokumen PDF
+                            </span>
+                            <a href="assets/img/Sertifikat/SertifikatVolunterMBG.pdf" target="_blank" class="inline-flex items-center gap-1.5 bg-[#1B4332] text-white text-xs font-semibold px-4 py-2 rounded-lg hover:bg-[#2D5A46] transition shadow-xs">
+                                <i class="fas fa-eye text-xs"></i> Lihat
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Sertifikat 5 -->
+                    <div class="bg-white p-5 rounded-xl border border-gray-200/80 shadow-xs hover:shadow-md hover:border-[#84A98C] transition flex flex-col justify-between md:col-span-2 md:w-1/2 md:mx-auto">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="bg-[#E8F0EC] text-[#1B4332] w-12 h-12 rounded-xl flex items-center justify-center shrink-0 border border-[#D2E0D6]">
+                                <i class="fas fa-award text-2xl"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-bold text-base md:text-lg text-[#1B4332] leading-snug">
+                                    <a href="assets/img/Sertifikat/SertifikatPanitiaPCREsport.png" target="_blank" class="hover:text-[#52796F] transition">Sertifikat Panitia PCR Esport</a>
+                                </h4>
+                                <p class="text-gray-500 text-sm mt-1">Diterbitkan oleh Politeknik Caltex Riau</p>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-gray-100 flex items-center justify-between">
+                            <span class="text-xs text-gray-500 font-medium flex items-center gap-1.5">
+                                <i class="fas fa-file-image text-[#52796F]"></i> Gambar / PNG
+                            </span>
+                            <a href="assets/img/Sertifikat/SertifikatPanitiaPCREsport.png" target="_blank" class="inline-flex items-center gap-1.5 bg-[#1B4332] text-white text-xs font-semibold px-4 py-2 rounded-lg hover:bg-[#2D5A46] transition shadow-xs">
+                                <i class="fas fa-eye text-xs"></i> Lihat
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 bg-[#F8F9FA]">
+        <div class="container max-w-6xl mx-auto px-6">
+            <span class="block text-center text-xs font-bold uppercase tracking-widest text-[#52796F] mb-2">Portofolio Karya & Pengalaman</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-center text-[#1B4332] mb-16 tracking-tight">PROYEK & PENGALAMAN</h2>
+            
+            <div class="space-y-14">
+                <!-- Pengalaman 1: Magang PT PLN Icon Plus -->
+                <div class="bg-white rounded-2xl shadow-xs border border-gray-200/80 hover:shadow-md transition overflow-hidden flex flex-col md:flex-row">
+                    <div class="md:w-1/3 bg-gray-100 relative group overflow-hidden cursor-pointer min-h-[280px]" onclick="openImageModal('assets/img/InternICON+/P1.jpeg', 'Pemeliharaan & Pengecekan Perangkat pada Kabinet Rack Outdoor — PT PLN Icon Plus')">
+                        <img src="assets/img/InternICON+/P1.jpeg" alt="Magang PT PLN Icon Plus" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
+                            <span class="text-white text-xs font-semibold px-3 py-1.5 bg-black/60 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center gap-1.5">
+                                <i class="fas fa-search-plus"></i> Lihat Foto Utama
+                            </span>
+                        </div>
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 text-white">
+                            <span class="inline-block bg-[#1B4332] text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider mb-1">PLN Group</span>
+                            <p class="font-bold text-sm flex items-center gap-1.5">
+                                <i class="fas fa-building text-[#84A98C]"></i> PT PLN Icon Plus
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 p-8 flex flex-col justify-between">
+                        <div>
+                            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                                <h3 class="text-2xl font-bold text-[#1B4332]">Magang / Internship — PT PLN Icon Plus</h3>
+                                <span class="bg-[#E8F0EC] text-[#1B4332] text-xs font-semibold px-3 py-1 rounded-full border border-[#D2E0D6]">Pengalaman Magang</span>
+                            </div>
+                            <p class="text-sm text-[#52796F] mb-4 font-semibold flex items-center gap-1.5">
+                                <i class="fas fa-network-wired text-[#1B4332]"></i> Pemeliharaan & Operasional Infrastruktur Jaringan Telekomunikasi
+                            </p>
+                            <p class="text-gray-600 mb-5 leading-relaxed text-sm md:text-base">
+                                Pengalaman magang di <strong class="text-gray-800">PT PLN Icon Plus</strong> dengan fokus pada operasional dan pemeliharaan infrastruktur jaringan telekomunikasi serta kabel fiber optik (FTTx). Meliputi pemeliharaan perangkat rack & kabinet outdoor, pengujian tegangan sistem catu daya baterai cadangan (Lithium battery Sinelith 48V) menggunakan multimeter digital, perapian manajemen kabel patch cord fiber optik & OLT, hingga inspeksi Optical Distribution Point (ODP) di tiang jaringan dengan mengutamakan standar Keselamatan dan Kesehatan Kerja (K3) serta APD lengkap.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="bg-[#E8F0EC] text-[#1B4332] text-xs px-3 py-1 rounded-full font-medium border border-[#D2E0D6]">Fiber Optic (FTTH/FTTx)</span>
+                                <span class="bg-[#E8F0EC] text-[#1B4332] text-xs px-3 py-1 rounded-full font-medium border border-[#D2E0D6]">ODP & OLT</span>
+                                <span class="bg-[#E8F0EC] text-[#1B4332] text-xs px-3 py-1 rounded-full font-medium border border-[#D2E0D6]">Kabinet Outdoor & Huawei</span>
+                                <span class="bg-[#E8F0EC] text-[#1B4332] text-xs px-3 py-1 rounded-full font-medium border border-[#D2E0D6]">Power System & Lithium Battery</span>
+                                <span class="bg-[#E8F0EC] text-[#1B4332] text-xs px-3 py-1 rounded-full font-medium border border-[#D2E0D6]">Network Maintenance</span>
+                                <span class="bg-[#E8F0EC] text-[#1B4332] text-xs px-3 py-1 rounded-full font-medium border border-[#D2E0D6]">K3 Lapangan</span>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <button onclick="document.getElementById('galeri-iconplus').classList.toggle('hidden')" class="bg-[#1B4332] text-white px-5 py-2.5 rounded-xl font-semibold hover:bg-[#2D5A46] transition shadow-xs flex items-center gap-2 w-fit">
+                                <i class="fas fa-images"></i> <span>Lihat Galeri Dokumentasi (6 Foto)</span>
+                            </button>
+                        </div>
+                        
+                        <div id="galeri-iconplus" class="hidden mt-6 border-t border-gray-100 pt-6">
+                            <h4 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-4 flex items-center gap-1.5">
+                                <i class="fas fa-camera text-[#52796F]"></i> Dokumentasi Lapangan PT PLN Icon Plus (Klik untuk memperbesar)
+                            </h4>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                                <!-- Foto 1 -->
+                                <div class="overflow-hidden rounded-xl shadow-xs group relative cursor-pointer border border-gray-200" onclick="openImageModal('assets/img/InternICON+/P1.jpeg', 'Pemeliharaan & Pengecekan Perangkat pada Kabinet Rack Outdoor — PT PLN Icon Plus')">
+                                    <img src="assets/img/InternICON+/P1.jpeg" alt="Pemeliharaan Rack Outdoor" class="w-full h-40 object-cover transform group-hover:scale-105 transition duration-500">
+                                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-2 text-center text-white">
+                                        <i class="fas fa-search-plus text-base mb-1"></i>
+                                        <span class="text-[11px] font-semibold leading-tight">Kabinet Rack Outdoor</span>
+                                    </div>
+                                </div>
+                                <!-- Foto 2 -->
+                                <div class="overflow-hidden rounded-xl shadow-xs group relative cursor-pointer border border-gray-200" onclick="openImageModal('assets/img/InternICON+/P2.jpeg', 'Pengukuran & Pengujian Baterai Backup Lithium (Sinelith LFP48S-100) Menggunakan Multimeter Digital')">
+                                    <img src="assets/img/InternICON+/P2.jpeg" alt="Pengujian Baterai Lithium" class="w-full h-40 object-cover transform group-hover:scale-105 transition duration-500">
+                                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-2 text-center text-white">
+                                        <i class="fas fa-search-plus text-base mb-1"></i>
+                                        <span class="text-[11px] font-semibold leading-tight">Pengujian Baterai 48V</span>
+                                    </div>
+                                </div>
+                                <!-- Foto 3 -->
+                                <div class="overflow-hidden rounded-xl shadow-xs group relative cursor-pointer border border-gray-200" onclick="openImageModal('assets/img/InternICON+/P3.jpeg', 'Pekerjaan Ketinggian Pemeliharaan Kotak ODP Fiber Optik di Tiang Distribusi dengan APD Lengkap')">
+                                    <img src="assets/img/InternICON+/P3.jpeg" alt="Pemeliharaan ODP Tiang" class="w-full h-40 object-cover transform group-hover:scale-105 transition duration-500">
+                                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-2 text-center text-white">
+                                        <i class="fas fa-search-plus text-base mb-1"></i>
+                                        <span class="text-[11px] font-semibold leading-tight">Pemeliharaan ODP Tiang</span>
+                                    </div>
+                                </div>
+                                <!-- Foto 4 -->
+                                <div class="overflow-hidden rounded-xl shadow-xs group relative cursor-pointer border border-gray-200" onclick="openImageModal('assets/img/InternICON+/P4.jpeg', 'Manajemen Kabel Patch Cord Fiber Optik (SC Connector) pada Rak Distribusi / OLT')">
+                                    <img src="assets/img/InternICON+/P4.jpeg" alt="Patch Cord Fiber Optik" class="w-full h-40 object-cover transform group-hover:scale-105 transition duration-500">
+                                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-2 text-center text-white">
+                                        <i class="fas fa-search-plus text-base mb-1"></i>
+                                        <span class="text-[11px] font-semibold leading-tight">Patch Cord FO & OLT</span>
+                                    </div>
+                                </div>
+                                <!-- Foto 5 -->
+                                <div class="overflow-hidden rounded-xl shadow-xs group relative cursor-pointer border border-gray-200" onclick="openImageModal('assets/img/InternICON+/P5.jpeg', 'Inspeksi & Pemeliharaan Kabinet Outdoor Huawei serta Sistem Catu Daya / Rectifier')">
+                                    <img src="assets/img/InternICON+/P5.jpeg" alt="Inspeksi Kabinet Huawei" class="w-full h-40 object-cover transform group-hover:scale-105 transition duration-500">
+                                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-2 text-center text-white">
+                                        <i class="fas fa-search-plus text-base mb-1"></i>
+                                        <span class="text-[11px] font-semibold leading-tight">Kabinet Huawei & Rectifier</span>
+                                    </div>
+                                </div>
+                                <!-- Foto 6 -->
+                                <div class="overflow-hidden rounded-xl shadow-xs group relative cursor-pointer border border-gray-200" onclick="openImageModal('assets/img/InternICON+/P6.jpeg', 'Penerapan SOP Keselamatan dan Penggunaan Alat Pelindung Diri (APD) Full Body Harness Standar K3')">
+                                    <img src="assets/img/InternICON+/P6.jpeg" alt="Standar K3 & Body Harness" class="w-full h-40 object-cover transform group-hover:scale-105 transition duration-500">
+                                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-2 text-center text-white">
+                                        <i class="fas fa-search-plus text-base mb-1"></i>
+                                        <span class="text-[11px] font-semibold leading-tight">Standar K3 & APD Harness</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 1 -->
+                <div class="bg-white rounded-2xl shadow-xs border border-gray-200/80 hover:shadow-md transition overflow-hidden flex flex-col">
+                    <div class="p-8">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <h3 class="text-2xl font-bold text-[#1B4332]">Freelance Instalasi & Konfigurasi Jaringan</h3>
+                            <span class="bg-[#E8F0EC] text-[#1B4332] text-xs font-semibold px-3 py-1 rounded-full border border-[#D2E0D6]">Proyek Mandiri</span>
+                        </div>
+                        <p class="text-sm text-[#52796F] mb-4 font-semibold">Periode 2025 – Sekarang</p>
+                        <p class="text-gray-600 mb-5 leading-relaxed text-sm md:text-base">Pengalaman instalasi dan konfigurasi jaringan di rumah, sekolah, dan kantor (Pekanbaru). Pekerjaan meliputi pemasangan perangkat, konfigurasi dasar, serta troubleshooting.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-[#E8F0EC] text-[#1B4332] text-xs px-3 py-1 rounded-full font-medium border border-[#D2E0D6]">MikroTik Router</span>
+                            <span class="bg-[#E8F0EC] text-[#1B4332] text-xs px-3 py-1 rounded-full font-medium border border-[#D2E0D6]">Access Point</span>
+                            <span class="bg-[#E8F0EC] text-[#1B4332] text-xs px-3 py-1 rounded-full font-medium border border-[#D2E0D6]">Switch</span>
+                        </div>
+                        
+                        <button onclick="document.getElementById('galeri-freelance').classList.toggle('hidden')" class="bg-[#1B4332] text-white px-5 py-2.5 rounded-xl font-semibold hover:bg-[#2D5A46] transition shadow-xs flex items-center gap-2 w-fit">
+                            <i class="fas fa-images"></i> <span>Lihat Galeri Dokumentasi</span>
+                        </button>
+                        
+                        <div id="galeri-freelance" class="hidden mt-6 border-t border-gray-100 pt-6">
+                            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                                <div class="overflow-hidden rounded-xl shadow-xs group cursor-pointer border border-gray-200" onclick="openImageModal('assets/img/Freelance/P1.jpeg', 'Instalasi & Konfigurasi Jaringan — Pemasangan Perangkat Lapangan')">
+                                    <img src="assets/img/Freelance/P1.jpeg" alt="Dokumentasi 1" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-500">
+                                </div>
+                                <div class="overflow-hidden rounded-xl shadow-xs group cursor-pointer border border-gray-200" onclick="openImageModal('assets/img/Freelance/p2.jpeg', 'Instalasi & Konfigurasi Jaringan — Pengkabelan & Setting Switch')">
+                                    <img src="assets/img/Freelance/p2.jpeg" alt="Dokumentasi 2" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-500">
+                                </div>
+                                <div class="overflow-hidden rounded-xl shadow-xs group cursor-pointer border border-gray-200" onclick="openImageModal('assets/img/Freelance/p3.jpeg', 'Instalasi & Konfigurasi Jaringan — Penarikan kabel')">
+                                    <img src="assets/img/Freelance/p3.jpeg" alt="Dokumentasi 3" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-500">
+                                </div>
+                                <div class="overflow-hidden rounded-xl shadow-xs group cursor-pointer border border-gray-200" onclick="openImageModal('assets/img/Freelance/p4.jpeg', 'Instalasi & Konfigurasi Jaringan — Pemasangan Access Point')">
+                                    <img src="assets/img/Freelance/p4.jpeg" alt="Dokumentasi 4" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-500">
+                                </div>
+                                <div class="overflow-hidden rounded-xl shadow-xs group cursor-pointer border border-gray-200" onclick="openImageModal('assets/img/Freelance/p5.jpeg', 'Instalasi & Konfigurasi Jaringan — Pengujian Konektivitas & Troubleshooting')">
+                                    <img src="assets/img/Freelance/p5.jpeg" alt="Dokumentasi 5" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-500">
+                                </div>
+                                <div class="overflow-hidden rounded-xl shadow-xs group cursor-pointer border border-gray-200" onclick="openImageModal('assets/img/Freelance/foto5.png', 'Instalasi & Konfigurasi Jaringan — Dokumentasi Lapangan')">
+                                    <img src="assets/img/Freelance/foto5.png" alt="Dokumentasi 6" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-500">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-2xl shadow-xs border border-gray-200/80 hover:shadow-md transition overflow-hidden flex flex-col md:flex-row-reverse">
+                    <div class="md:w-1/3 bg-gray-100 cursor-pointer" onclick="openImageModal('assets/img/MiniWorkshop/p1.png', 'Sistem E-Commerce Mini Workshop — Dokumentasi dengan pihak Toko/client')">
+                        <img src="assets/img/MiniWorkshop/p1.png" alt="E-Commerce Mini Workshop" class="w-full h-full object-cover hover:opacity-95 transition">
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <h3 class="text-2xl font-bold text-[#1B4332]">Sistem E-Commerce Mini Workshop</h3>
+                            <span class="bg-[#E8F0EC] text-[#1B4332] text-xs font-semibold px-3 py-1 rounded-full border border-[#D2E0D6]">Tugas Akhir</span>
+                        </div>
+                        <p class="text-gray-600 mb-4 leading-relaxed text-sm md:text-base">Mengembangkan aplikasi e-commerce berbasis web untuk membantu proses penjualan produk fashion pada UMKM Mini Workshop dengan metode Prototyping. Proyek ini merupakan <strong>Tugas Akhir</strong> saya di kampus.</p>
+                        <div class="mb-4">
+                            <a href="https://miniworkshop.pocari.id/" target="_blank" class="text-[#1B4332] hover:text-[#52796F] font-semibold underline inline-flex items-center gap-1.5"><i class="fas fa-external-link-alt text-xs"></i> Kunjungi Website Mini Workshop</a>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-[#E8F0EC] text-[#1B4332] text-xs px-3 py-1 rounded-full font-medium border border-[#D2E0D6]">Laravel 12</span>
+                            <span class="bg-[#E8F0EC] text-[#1B4332] text-xs px-3 py-1 rounded-full font-medium border border-[#D2E0D6]">MySQL</span>
+                            <span class="bg-[#E8F0EC] text-[#1B4332] text-xs px-3 py-1 rounded-full font-medium border border-[#D2E0D6]">Bootstrap</span>
+                        </div>
+                        
+                        <button onclick="document.getElementById('galeri-miniworkshop').classList.toggle('hidden')" class="bg-[#1B4332] text-white px-5 py-2.5 rounded-xl font-semibold hover:bg-[#2D5A46] transition shadow-xs flex items-center gap-2 w-fit">
+                            <i class="fas fa-images"></i> <span>Lihat Galeri</span>
+                        </button>
+                        
+                        <div id="galeri-miniworkshop" class="hidden mt-6 border-t border-gray-100 pt-6">
+                            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                                <div class="overflow-hidden rounded-xl shadow-xs group cursor-pointer border border-gray-200" onclick="openImageModal('assets/img/MiniWorkshop/p1.png', 'Sistem E-Commerce Mini Workshop — Dokumentasi dengan pihak Toko/client')">
+                                    <img src="assets/img/MiniWorkshop/p1.png" alt="Dokumentasi 1" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-500">
+                                </div>
+                                <div class="overflow-hidden rounded-xl shadow-xs group cursor-pointer border border-gray-200" onclick="openImageModal('assets/img/MiniWorkshop/p2.png', 'Sistem E-Commerce Mini Workshop — Dokumentasi Sidang Akhir')">
+                                    <img src="assets/img/MiniWorkshop/p2.png" alt="Dokumentasi 2" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-500">
+                                </div>
+                                <div class="overflow-hidden rounded-xl shadow-xs group cursor-pointer border border-gray-200" onclick="openImageModal('assets/img/MiniWorkshop/p3.png', 'Sistem E-Commerce Mini Workshop — Detail Produk')">
+                                    <img src="assets/img/MiniWorkshop/p3.png" alt="Dokumentasi 3" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-500">
+                                </div>
+                                <div class="overflow-hidden rounded-xl shadow-xs group cursor-pointer border border-gray-200" onclick="openImageModal('assets/img/MiniWorkshop/p4.png', 'Sistem E-Commerce Mini Workshop — Dashboard Admin')">
+                                    <img src="assets/img/MiniWorkshop/p4.png" alt="Dokumentasi 4" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-500">
+                                </div>
+                                <div class="overflow-hidden rounded-xl shadow-xs group cursor-pointer border border-gray-200" onclick="openImageModal('assets/img/MiniWorkshop/p5.png', 'Sistem E-Commerce Mini Workshop — Dokumentasi Sidang proposal')">
+                                    <img src="assets/img/MiniWorkshop/p5.png" alt="Dokumentasi 5" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-500">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-2xl shadow-xs border border-gray-200/80 hover:shadow-md transition overflow-hidden flex flex-col md:flex-row">
+                    <div class="md:w-1/3 bg-gray-100 cursor-pointer" onclick="openImageModal('assets/img/BIGDATA/P1.png', 'Pipeline Big Data IoT — Dokumentasi pengerjaan')">
+                        <img src="assets/img/BIGDATA/P1.png" alt="Pipeline Big Data IoT" class="w-full h-full object-cover hover:opacity-95 transition">
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <h3 class="text-2xl font-bold text-[#1B4332]">Pipeline Big Data IoT untuk Pemantauan Lingkungan</h3>
+                            <span class="bg-[#E8F0EC] text-[#1B4332] text-xs font-semibold px-3 py-1 rounded-full border border-[#D2E0D6]">Proyek IoT</span>
+                        </div>
+                        <p class="text-gray-600 mb-4 leading-relaxed text-sm md:text-base">Mengembangkan sistem pengolahan data IoT untuk pemantauan lingkungan secara real-time berfokus pada proses pengumpulan, pemrosesan, dan analisis data dari sensor.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-[#E8F0EC] text-[#1B4332] text-xs px-3 py-1 rounded-full font-medium border border-[#D2E0D6]">MongoDB</span>
+                            <span class="bg-[#E8F0EC] text-[#1B4332] text-xs px-3 py-1 rounded-full font-medium border border-[#D2E0D6]">IoT Sensor</span>
+                            <span class="bg-[#E8F0EC] text-[#1B4332] text-xs px-3 py-1 rounded-full font-medium border border-[#D2E0D6]">Big Data Pipeline</span>
+                        </div>
+                        
+                        <button onclick="document.getElementById('galeri-bigdata').classList.toggle('hidden')" class="bg-[#1B4332] text-white px-5 py-2.5 rounded-xl font-semibold hover:bg-[#2D5A46] transition shadow-xs flex items-center gap-2 w-fit">
+                            <i class="fas fa-images"></i> <span>Lihat Galeri</span>
+                        </button>
+                        
+                        <div id="galeri-bigdata" class="hidden mt-6 border-t border-gray-100 pt-6">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="overflow-hidden rounded-xl shadow-xs group cursor-pointer border border-gray-200" onclick="openImageModal('assets/img/BIGDATA/P1.png', 'Pipeline Big Data IoT — Dokumentasi pengerjaan')">
+                                    <img src="assets/img/BIGDATA/P1.png" alt="Dokumentasi 1" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-500">
+                                </div>
+                                <div class="overflow-hidden rounded-xl shadow-xs group cursor-pointer border border-gray-200" onclick="openImageModal('assets/img/BIGDATA/p2.png', 'Pipeline Big Data IoT — Dokumentasi pengerjaan')">
+                                    <img src="assets/img/BIGDATA/p2.png" alt="Dokumentasi 2" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-500">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <footer id="contact" class="bg-[#1B4332] text-white pt-16 pb-8 border-t border-[#132E22]">
+        <div class="container max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-12">
+                <div class="mb-8 md:mb-0 text-center md:text-left">
+                    <h2 class="text-3xl font-bold mb-3 text-white">Mari Bekerja Sama</h2>
+                    <p class="text-[#C5DFD0] mb-4 max-w-md">Saat ini sedang mencari kesempatan magang untuk mengembangkan kemampuan di bidang IT.</p>
+                </div>
+                <div class="flex flex-col space-y-3.5 text-center md:text-left">
+                    <a href="mailto:maldiritonga2306@gmail.com" class="flex items-center space-x-3 text-[#E2EFE7] hover:text-white transition">
+                        <i class="fas fa-envelope text-lg text-[#84A98C]"></i>
+                        <span>maldiritonga2306@gmail.com</span>
+                    </a>
+                    <a href="tel:+6283862572686" class="flex items-center space-x-3 text-[#E2EFE7] hover:text-white transition">
+                        <i class="fas fa-phone text-lg text-[#84A98C]"></i>
+                        <span>+62 838-6257-2686</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/m-aldi-ritonga-4773b5406" target="_blank" class="flex items-center space-x-3 text-[#E2EFE7] hover:text-white transition">
+                        <i class="fab fa-linkedin text-lg text-[#84A98C]"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/maldiritonga" target="_blank" class="flex items-center space-x-3 text-[#E2EFE7] hover:text-white transition">
+                        <i class="fab fa-github text-lg text-[#84A98C]"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-[#234E3F] pt-8 text-center text-[#9DC6B0] text-sm">
+                &copy; 2026 M. Aldi Ritonga. Dibuat dengan HTML & Tailwind CSS.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Lightbox Modal -->
+    <div id="image-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex flex-col items-center justify-center p-4" onclick="closeImageModal()">
+        <button onclick="closeImageModal()" class="absolute top-6 right-6 text-white hover:text-[#84A98C] text-3xl font-bold transition z-50 p-2 cursor-pointer" title="Tutup (Esc)">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="relative max-w-4xl max-h-[85vh] flex flex-col items-center" onclick="event.stopPropagation()">
+            <img id="modal-img" src="" alt="Preview Dokumentasi" class="max-w-full max-h-[75vh] rounded-2xl shadow-2xl object-contain border border-white/20">
+            <p id="modal-caption" class="text-white text-center mt-3 text-sm md:text-base font-medium px-5 py-2 bg-[#1B4332]/95 border border-[#2D5A46] rounded-full max-w-2xl shadow-lg"></p>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
